@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh 40vh 1fr;
+    grid-template-areas: 
+    "navheader nav nav nav nav nav"
+    ". prof-pic prof-info prof-info prof-info ."
+    ". posts posts posts posts .";
+}
+
+/* .area-border{
+    border: 2px solid black;
+} */
+
+#navheader {
+    background-color: pink;
+    grid-area: navheader;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar{
+    grid-area: nav;
+    background-color: pink;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.prof-info{
+    grid-area: prof-info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 5vw;
+}
+
+.header{
+    align-self: center;
+}
+
+.prof-pic{
+    grid-area: prof-pic;
+    justify-self: center;
+    align-self: center;
+}
+
+.image{
+    max-width: 100%;
+}
+
+.image > img{
+    width: 100%;
+    height: auto;
+}
+
+.posts{
+    grid-area: posts;
+}
+
+.post-card{
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 25px;
+    margin: 2vh 0;
+}
+
+.card-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links > a{
+    color: black;
+    text-decoration: none;
+}
+
+.card-links > a:hover{
+    text-decoration: underline;
+    background-color: dodgerblue;
+    color: white;
+}

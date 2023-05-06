@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: .5fr 3.5fr 5fr 2fr;
+    grid-template-areas: 
+    "navheader nav nav nav nav nav"
+    "fs fs fs fs fs fs"
+    ". posts posts posts posts ."
+    "footer footer footer footer footer footer";
+}
+
+
+.navheader {
+    grid-area: navheader;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    
+}
+
+.navbar{
+    grid-area: nav;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-right: 8%;
+    font-size: 150%;
+    
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.header{
+    align-self: center;
+}
+
+.fs{
+    grid-area: fs;
+    max-width: 100%;
+    padding-top: 0%;
+    justify-self: center;
+    align-self: center;
+}
+
+.image{
+    max-width: 100%;
+    padding-left: 0%;
+}
+
+.fs-text{
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:800%;
+  
+    
+}
+
+.posts{
+    grid-area: posts;
+}
+
+.post-card{
+    border: none;
+    padding: 1em;
+    border-radius: 25px;
+    margin: 2vh 0;
+}
+
+.card-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links > a{
+    color: black;
+    text-decoration: none;
+}
+
+.card-links > a:hover{
+    text-decoration: underline;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.card-info{
+
+    font-size: 160%;
+    list-style: none;
+}
+
+.raisin-header{
+    font-size: 150%;
+}
+
+.rm-button{
+
+  background-color: goldenrod;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 80px 0px;
+  padding: 13% 10%;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.footer{
+    background-color: black;
+    grid-area: footer;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.footer-header{
+    color: white;
+    font-size: 250%
+}
+.footer a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.map{
+    background-color: black;
+    grid-area: footer;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.Info{
+
+    color: white;
+    list-style: none;
+
+}
+
+
+.Shows {
+
+    color: white;
+    list-style: none;
+}
+
+
+.Social{
+
+    color: white;
+    list-style: none;
+
+}
